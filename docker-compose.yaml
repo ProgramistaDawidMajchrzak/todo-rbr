@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+    container_name: todo_email_rbr
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/var/www/html
+    environment:
+      - DB_CONNECTION=sqlite
+      - DB_DATABASE=/var/www/html/database/database.sqlite
