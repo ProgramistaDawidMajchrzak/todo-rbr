@@ -14,22 +14,22 @@ Aplikacja na rzecz rekrutacji do Junior PHP Developer - Grupa RBR do zarządzani
 git clone https://github.com/ProgramistaDawidMajchrzak/todo-rbr
 cd todo-rbr
 ```
-2. zbuduj kontener i zainstaluj zaleznosci
-```bash
-docker-compose up -d --build
-```
-3. zainstaluj zaleznosci
+2. zainstaluj zaleznosci
 ```bash
 npm install
 npm run build
 composer install
 ```
-5. utworz .env file
+3. zbuduj kontener
+```bash
+docker-compose up -d --build
+``` 
+4. utworz .env file
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
-6. zrób migracje
+5. zrób migracje
 ```bash
 php artisan migrate
 php artisan serve
