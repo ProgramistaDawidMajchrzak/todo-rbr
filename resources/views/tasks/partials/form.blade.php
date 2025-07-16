@@ -29,11 +29,12 @@
     </select>
 </div>
 @php
+    $dueDate = old('due_date', isset($task) ? optional($task->due_date)->format('Y-m-d') : '');
     $today = date('Y-m-d');
 @endphp
 
 <div>
-    <label for="due_date" class="block font-semibold">Termin (opcjonalnie)</label>
-    <input type="date" name="due_date" id="due_date" value="{{ old('due_date', $task->due_date ?? '') }}"
-           min="{{ $today }}" class="w-full border rounded p-2 mt-1">
+    <label for="due_date" class="block font-semibold">Termin</label>
+    <input type="date" name="due_date" id="due_date" value="{{ $dueDate }}"
+           min="{{ $today }}" class="w-full border rounded p-2 mt-1" required>
 </div>

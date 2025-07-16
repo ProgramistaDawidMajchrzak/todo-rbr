@@ -17,7 +17,7 @@
                             @include('tasks.partials.form')
 
                             <button type="submit" 
-                                class="bg-blue-700 hover:bg-blue-800 font-bold px-10 py-8 rounded shadow-md transition duration-300">
+                                class="bg-blue-700 text-white hover:bg-blue-800 font-bold px-10 py-2 rounded shadow-md transition duration-300">
                                 Zapisz
                             </button>                          
                         </form>

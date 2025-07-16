@@ -19,7 +19,7 @@
 
                         <form action="{{ route('tasks.generatePublicLink', $task) }}" method="POST" class="mt-4">
                             @csrf
-                            <button type="submit" class="bg-blue-700 hover:bg-blue-800 font-bold px-10 py-8 rounded shadow-md transition duration-300">
+                            <button type="submit" class="bg-blue-700 text-white hover:bg-blue-800 font-bold px-10 py-2 rounded shadow-md transition duration-300">
                                 Wygeneruj publiczny link do zadania (ważny 24h)
                             </button>
                         </form>
